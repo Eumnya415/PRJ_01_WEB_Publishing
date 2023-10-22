@@ -34,7 +34,7 @@
     }
   }
 
-  // 텍스트를 삭제하는 함수를 정의합니다.
+  // 텍스트를 삭제하는 함수를 정의
   function deleteTxt(){
     currentTxt.pop();
     spanEl.textContent = currentTxt.join("");
