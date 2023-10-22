@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+/* header.css */
+/*이 부분은 모든 요소(*)에 적용되는 스타일을 정의*/
+*{
+  margin:0;   /*외부 여백 0으로 설정*/
+  padding:0;   /*내부 여백 0으로 설정*/
+  box-sizing:border-box;   /*박스 모델을 사용하여 요소의 전체 너비와 높이에 패딩과 테두리를 포함*/
+}
+a, a:link, a:visited{   /*하이퍼링크에 적용되는 스타일 정의*/
+  color:inherit;   /*링크 텍스트 색상을 부모 요소로부터 상속*/
+  text-decoration:none;   /*링크의 밑줄 제거*/
+}
+
+li{   /*li 요소에 적용되는 스타일 정의*/
+  list-style:none;   /*목록 마커 (불릿) 제거*/
+}
+.container{   /*container 클래스에 적용되는 스타일 정의*/
+  width:1140px;   /*너비를 1140px로 설정*/
+  margin:0 auto;   /*좌우 여백을 자동으로 조정하여 가운데 정렬*/
+}
+header{   /*header 요소에 적용되는 스타일 정의*/
+  position:fixed;   /*요소를 화면에 고정*/
+  color:white;   /*텍스트 색상을 흰색으로 설정*/
+  top:0;   /*상단에 위치하도록 설정*/
+  z-index:1;   /*요소에 쌓이는 순서를 지정*/
+  width:100%;   /*너비를 화면과 같게 설정*/
+  padding:1rem;   /*내부 여백을 1rem으로 설정*/
+}
+header .container{   /*header 요소 내부의 container 클래스에 적용되는 스타일 정의*/
+  display:flex;   /*플렉스 박스 레이아웃 사용*/
+  justify-content:space-between;   /*자식 요소 사이의 공간을 가능한 최대로 설정하여 좌우 정렬*/
+  align-items:center;   /*수직 정렬을 가운데로 설정*/
+  width:100%;   /*너비를 화면 너비와 같게 설정*/
+}
+header nav ul{   /*header 요소 내부의 nav 요소 아래에 있는 ul 요소에 적용되는 스타일 정의*/
+  display:flex;   /*flex 박스 레이아웃 사용*/ 
+}
+header nav ul li{   /*header 요소 내부의 nav 요소 아래에 있는 ul 요소 내부의 li요소에 적용되는 스타일 정의*/
+  padding:10px;   /*내부 여백 10px 설정*/
+}
+header button{   /*header 요소 내부의 button 요소에 적용되는 스타일 정의*/
+  background: transparent;   /*배경을 투명하게 설정*/
+  border:0;   /*테두리 없음*/
+  cursor: pointer;   /*커서 모양을 포인터로 변경하여 버튼임을 나타냄*/
+  color:white;    /*텍스트 색상 : 흰색*/
+}
+header h1 button{   /*header 요소 내부의 h1 요소 아래에 있는 button 요소에 적용되는 스타일 정의*/
+  font-size: 2rem;   /*글꼴 크기 2rem 설정*/
+  font-weight: bold;   /*글꼴 크기 굵게 설정*/
+}
+header nav ul li button{   /*header 요소 내부의 nav 요소 아래에 있는 ul 요소 내부의 li 요소 아래에 있는 button 요소에 적용되는 스타일 정의*/
+  font-size: 1.2rem;   /*글꼴 크기 1.2rem 설정*/
+}
+
+
+/*main 요소의 스타일 정의*/
+main{
+  width:100%;   /*너비를 화면 너비의 100%로 설정*/
+  height:100vh;   /*높이를 뷰포트 높이(viewport height - 부모 요소의 높이에 구애받지 않고 특정 요소의 높이를 브라우저 화면 높이에 맞출 수 있음)의 100%로 설정*/
+  color:white;   /*텍스트 색상:흰색*/
+  background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/me.jpg') center center;
+  /*배경 이미지를 선형 그러데이션과 이미지로 설정. 이미지는 가운데 가로, 세로, 중앙에 배치*/
+  background-size:cover;   /*배경 이미지를 화면에 맞게 조절*/
+  display:flex;   /*플렉스 박스 레이아웃을 사용*/  
+  justify-content:center;   /*자식 요소를 가로 중앙에 정렬*/
+  align-items:center;   /*자식 요소를 세로 중앙에 정렬*/
+  text-align:center;   /*텍스트를 가운데 정렬*/
+}
+
+main h4{   /*main 요소 내부의 h2 요소에 적용되는 스타일 정의*/   
+  font-size:2rem;   /* 글꼴 크기를 2rem으로 설정 */
+}
+main h2{
+  font-size:3.5rem;   /* 글꼴 크기를 3.5rem으로 설정 */
+  margin:2rem 0;   /* 위아래 여백을 2rem, 좌우 여백을 0으로 설정*/
+  letter-spacing:3px;   /* 글자 사이 간격을 3px로 설정 */
+  font-family:'Varela Round', sans-serif; /* 웹 폰트 추가 */
+}
+main p {   /*main 요소 내부의 p 요소에 적용되는 스타일을 정의*/   
+  max-width:500px;   /* 최대 너비를 500px로 제한 */
+  margin:0 auto;   /* 가운데 정렬을 위해 좌우 여백을 자동으로 조정 */
+  font-size:1.25rem;   /* 글꼴 크기를 1.25rem으로 설정 */
+}
+main button.download{   /* main 요소 내부의 download 클래스를 가진 button 요소에 적용되는 스타일을 정의 */
+  background-color:transparent;   /* 배경을 투명하게 설정 */
+  border:3px solid white;   /* 3px 흰색 테두리를 추가 */
+  border-radius:20px;   /* 테두리의 모퉁이를 둥글게 만듬 */
+  padding:1rem 2rem;   /* 내부 여백을 위아래로 1rem, 좌우로 2rem으로 설정 */
+  margin-top:3rem;   /* 위쪽 여백을 3rem으로 설정 */
+  color:white;   /* 텍스트 색상을 흰색으로 설정 */
+  font-weight:bold;   /* 텍스트를 굵게 표시 */
+  cursor:pointer;   /* 커서 모양을 포인터로 변경하여 버튼임을 나타냄 */
+}
+
+/* main 요소 내부의 mouse 클래스를 가진 button 요소에 적용되는 스타일을 정의 */
+main button.mouse{
+  background-color:transparent; /* 배경을 투명하게 설정 */
+  border:none; /* 테두리 없음 */
+  color:white; /* 텍스트 색상을 흰색으로 설정 */
+  font-size:2rem; /* 글꼴 크기를 2rem으로 설정 */
+  position:absolute; /* 요소를 절대 위치로 설정 */
+  bottom:1rem; /* 하단에 위치하도록 설정 */
+  left:50%; /* 가로 중앙에 위치하도록 설정 */
+  transform:translateX(-50%); /* 가로 가운데 정렬을 위해 가로 이동을 적용 */
+  animation:upDown 1s ease-in-out infinite; /* upDown 애니메이션을 적용 */
+  cursor:pointer; /* 커서 모양을 포인터로 변경하여 버튼임을 나타냄. */
+}
+
+/* upDown 애니메이션을 정의 */
+@keyframes upDown{
+  0%{
+    bottom:1rem; /* 시작 시 하단 위치를 1rem으로 설정 */
+  }
+  50%{
+    bottom:1.5rem; /* 중간에 하단 위치를 1.5rem으로 변경 */
+  }
+  100%{
+    bottom:1rem; /* 다시 하단 위치를 1rem으로 설정 */
+  }
+}
+
+/* main 요소 내부의 h2 요소 내부의 span 요소의 가상 가로선을 정의. */
+main h2 span::after{
+  content:""; /* 가상 가로선의 내용 없음 */
+  height:40px; /* 높이를 40px로 설정 */
+  width:3px; /* 너비를 3px로 설정 */
+  background-color:#fff; /* 배경 색상을 흰색으로 설정 */
+  display:inline-block; /* 인라인 블록 요소로 표시 */
+  animation: blink .7s ease-in-out infinite; /* blink 애니메이션을 적용 */
+}
+
+/* blink 애니메이션을 정의 */
+/* 이 코드는 "blink"라는 애니메이션을 정의하며, 이 애니메이션은 요소를 깜빡이는 효과를 준다.
+ 애니메이션은 0%에서 100%까지의 시간 동안 투명도를 조절함.
+ 처음에는 완전히 불투명(1)이고, 나중에는 완전히 투명(0)이 된다. 
+ 이렇게 투명도가 변경되면서 요소가 나타나고 사라지는 깜빡이는 효과를 얻을 수 있다. */
+
+@keyframes blink {
+  0%{
+    opacity: 1; /* 애니메이션의 시작 시간(0%)에서 투명도(opacity)를 1(100% 불투명)로 설정 */
+  }
+  100%{
+    opacity: 0; /* 애니메이션의 종료 시간(100%)에서 투명도(opacity)를 0(완전 투명)로 설정 */
+  }
+}
+
+
+/* about_me.css */
+/* section 요소의 스타일을 정의 */
+section{
+  font-family:'Poppins', sans-serif; /* 웹폰트 설정 */
+  padding:5rem 0; /* 상단과 하단 패딩을 5rem(80px)로 설정. */
+}
+
+/* 짝수 번째 section 요소에 배경 색상을 적용하는 스타일을 정의 */
+section:nth-child(2n){
+  background-color:#f8f8f8; /* 배경 색상을 연한 회색(#f8f8f8)으로 설정 */
+}
+
+/* section 내부의 .title 클래스에 적용되는 스타일을 정의 */
+section .title{
+  margin-bottom:3rem; /* 하단 여백을 3rem(48px)로 설정 */
+}
+
+/* section 내부의 .title 클래스 내부의 h4 요소에 적용되는 스타일을 정의 */
+section .title h4{
+  font-size:1.35rem; /* 글꼴 크기를 1.35rem으로 설정 */
+  color:#ed4848; /* 텍스트 색상을 빨간색(#ed4848)으로 설정 */
+  position:relative; /* 요소의 위치를 상대적으로 설정 */
+}
+
+/* section 내부의 .title 클래스 내부의 h2 요소에 적용되는 스타일을 정의 */
+section .title h2{
+  font-size:3.5rem; /* 글꼴 크기를 3.5rem으로 설정 */
+}
+
+/* section 내부의 .title 클래스 내부의 p 요소에 적용되는 스타일을 정의*/
+section .title p{
+  font-size:1.15rem; /* 글꼴 크기를 1.15rem으로 설정 */
+}
+
+/* float 속성 해제 */
+/* section 내부의 .about-self 클래스의 가상 가로선을 정의 */
+section .about-self::after{
+  content:""; /* 가상 가로선의 내용 없음 */
+  clear:both; /* float 레이아웃을 해제 */
+  display:block; /* 요소를 블록 요소로 설정 */
+}
+
+/* 본문 너비 절반 지정 & 왼쪽 배치 */
+/* section 내부의 .about-self 클래스 내부의 .left 요소에 적용되는 스타일을 정의 */
+section .about-self .left{
+  width:50%; /* 너비를 부모 요소의 50%로 설정 */
+  float:left; /* 왼쪽으로 플로팅 */
+}
+
+/* 이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정 */
+/* section - .about-self - .left - img 요소에 적용되는 스타일을 정의 */
+section .about-self .left img{
+  max-width:100%; /* 최대 너비를 100%로 설정하여 이미지를 화면에 맞게 조절 */
+}
+
+/* 본문 너비 절반 지정 & 오른쪽 배치 */
+/* section - .about-self - right 요소에 적용되는 스타일을 정의 */
+section .about-self .right{
+  width:50%; /* 너비를 부모 요소의 50%로 설정 */
+  float:left; /* 왼쪽으로 플로팅 */
+  padding:0 2rem; /* 좌우 패딩을 0 위아래 패딩을 2rem(32px)으로 설정 */
+}
+
+/* 본문 오른쪽 h3 태그의 글자 크기와 여백 지정 */
+/* section - .about-self - right - h3 요소에 적용되는 스타일을 정의 */
+section .about-self .right h3{
+  font-size:2.25rem; /* 글꼴 크기를 2.25rem으로 설정 */
+  margin-bottom:1rem; /* 하단 여백을 1rem(16px)으로 설정 */
+}
+
+/* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
+/* section - .about-self - right - h3 - strong 요소에 적용되는 스타일을 정의 */
+section .about-self .right h3 strong{
+  color:#ed4848; /* 텍스트 색상을 빨간색(#ed4848)으로 설정 */
+}
+
+/* 본문 오른쪽 p 태그의 크기와 여백 지정 */
+/* section - .about-self - right - p 요소에 적용되는 스타일을 정의 */
+section .about-self .right p{
+  font-size:1.15rem; /* 글꼴 크기를 1.15rem으로 설정 */
+  margin:1rem 0; /* 위아래 여백을 1rem(16px)으로 설정 */
+}
+/* section - about-self - right - social a 요소에 적용되는 스타일을 정의 */
+section .about-self .right .social a{
+  font-size:2.5rem; /* 글꼴 크기를 2.5rem으로 설정 */
+  margin-right:0.2rem; /* 우측 여백을 0.2rem(3.2px)으로 설정 */
+}
+/* End about_me.css */
+
+
+/* what_i_do.css */
+/* float 속성 해제*/
+/* section 내부의 .do-me 클래스에 가상 가로선을 추가 */
+section .do-me::after{  
+  content:""; /* 가상 가로선의 내용 없음 */
+  display:block; /* 요소를 블록 요소로 설정 */
+  clear:both; /* float 레이아웃을 해제 */
+}
+
+/* 사각형 크기와 간격, 내부 여백 설정 */
+/* section .do-me .do-inner 클래스에 적용되는 스타일을 정의. */
+section .do-me .do-inner{
+  background-color:#fff; /* 배경 색상을 흰색(#fff)으로 설정 */
+  width:30%;   /* 너비를 부모 요소의 30%로 설정 */
+  padding:2rem;   /* 내부 패딩을 2rem(32px)로 설정 */
+  float:left;   /* 왼쪽으로 플로팅 */
+  margin-right:5%;   /* 우측 여백을 5%로 설정 */
+  cursor:pointer;   /* 커서 모양을 포인터로 변경하여 클릭 가능한 요소임을 나타냄. */
+}
+
+/* 마지막 사각형의 외부 여백 설정 */
+/* section .do-me .do-inner:last-child 에 적용되는 스타일을 정의*/
+section .do-me .do-inner:last-child{
+  margin-right:0;   /* 우측 여백을 0으로 설정하여 마지막 요소에 여백을 적용하지 않음 */
+}
+
+/* 아이콘 폰트 크기와 색상 */
+section .do-me .do-inner .icon i{
+  font-size:2.5rem;   /* 글꼴 크기를 2.5rem으로 설정 */
+  color:#ff6a6a;   /* 아이콘 색상을 연한 빨간색(#ff6a6a)으로 설정 */
+}
+
+/* HTML5, CSS3, BootStrap v5.0 텍스트 크기와 간격 */
+section .do-me .do-inner .content h3{
+  font-size:2rem;   /* 글꼴 크기를 2rem으로 설정*/
+  margin:1rem 0;   /* 위아래 여백을 1rem(16px)으로 설정 */
+}  
+
+/* 사각형 텍스트 크기 */
+section .do-me .do-inner .content p{
+  font-size:1.15rem;   /* 글꼴 크기를 1.15rem으로 설정 */
+}
+
+/* do-inner 클래스에 마우스를 올리면 배경색과 텍스트 색상 변경 */
+section .do-me .do-inner:hover{
+  background-color:lightcoral;   /* 배경 색상을 연한 코랄색(lightcoral)으로 변경 */
+  color:white;   /* 텍스트 색상을 흰색으로 변경 */
+}
+
+/* do-inner 클래스에 마우스를 올리면 아이콘 폰트 색상 변경 */
+section .do-me .do-inner:hover i{
+  color:white;   /* 아이콘 색상을 흰색으로 변경 */
+}
+/* End what_i_do.css */
+
+
+
+/* background.css */
+/* .bg 클래스에 배경 이미지 스타일을 정의 */
+.bg{
+  background:url('./images/background.jpg') center center;
+  /* 배경 이미지를 가운데 가로, 세로 중앙에 위치 */
+  background-size:cover; /* 배경 이미지를 화면에 맞게 조절 */
+  background-attachment:fixed;
+  /* 배경 이미지를 고정. 스크롤해도 배경 이미지가 고정된다 */
+  height:650px; /* 높이를 650px로 설정 */
+}
+/* End background.css */
+
+
+/* portfolio.css */
+section.portfolio::after{
+  content:""; /* 가상 가로선의 내용 없음 */
+  display:block; /* 요소를 블록 요소로 설정 */
+  clear:both;   /* clear 속성으로 float 속성값 해제*/
+}
+
+/* portfolio-inner 사각형 꾸미기 */
+section.portfolio .portfolio-inner{
+  width:30%; /* 너비를 부모 요소의 30%로 설정*/
+  margin-right:5%; /* 우측 여백을 5%로 설정 */
+  padding:1rem 1rem 1.5rem 1rem; 
+  /* 내부 패딩을 위쪽 1rem, 오른쪽 1rem, 아래쪽 1.5rem, 왼쪽 1rem으로 설정 */
+  float:left; /* 왼쪽으로 플로팅 */
+  background-color:#f8f8f8; /* 배경 색상을 연한 회색(#f8f8f8)으로 설정 */
+  border:1px solid #ccc; /* 1px 두께의 회색 테두리를 추가 */
+  margin-bottom:3rem; /* 하단 여백을 3rem으로 설정 */
+}
+
+/* 3번째마다 margin-right 0 적용 */
+section.portfolio .portfolio-inner:nth-child(3n){
+  margin-right:0; /* 우측 여백을 0으로 설정 */
+}
+
+/* 이미지의 크기가 부모 요소를 넘지 않도록 100%로 지정 */
+section.portfolio .portfolio-inner img{
+  width:100%; /* 너비를 부모 요소의 100%로 설정하여 이미지를 화면에 맞게 조절 */
+  display:block; /* 요소를 블록 요소로 설정 */
+}
+
+/* strong 태그 색상과 간격 */
+section.portfolio .portfolio-inner strong{
+  color:#ff6a6a; /* 텍스트 색상을 빨간색(#ff6a6a)으로 설정 */
+  margin:0.5rem 0; /* 위아래 여백을 0.5rem(8px)으로 설정 */
+  display:block; /* 요소를 블록 요소로 설정 */
+}
+
+/* h3 태그 색상과 간격 */
+section.portfolio .portfolio-inner h3{
+  font-size:1.75rem; /* 글꼴 크기를 1.75rem으로 설정 */
+}
+/* End portfolio.css */
+
+
+/* contact_with_me.css */
+section.contact .contact-me::after{
+  content:""; /* 가상 가로선의 내용 없음 */
+  display:block; /* 요소를 블록 요소로 설정 */
+  clear:both; /* float 레이아웃을 해제 */
+}
+
+section.contact .contact-me .left{
+  width:30%; /* 너비를 부모 요소의 30%로 설정*/
+  float:left; /* 왼쪽으로 플로팅 */
+}
+
+section.contact .contact-me .right{
+  float:left; /* 왼쪽으로 플로팅 */
+  width:65%; /* 너비를 부모 요소의 65%로 설정 */
+  margin-left:5%; /* 왼쪽 여백을 5%로 설정 */
+}
+
+section.contact .contact-me .left .card{
+  border:1px solid #ccc; /* 1px 회색 테두리를 추가 */
+  padding:1rem; /* 내부 패딩을 1rem(16px)로 설정 */
+  display:flex; /* 내용을 가로 방향으로 배치 */
+  align-items:center; /* 내용을 수직 가운데로 정렬 */
+  margin-bottom:1.25rem; /* 하단 여백을 1.25rem(20px)으로 설정 */
+}
+
+section.contact .contact-me .left .card .icon i{
+  font-size:2rem; /* 글꼴 크기를 2rem으로 설정 */
+  margin-right:15px; /* 우측 여백을 15px로 설정 */
+}
+
+section.contact .contact-me .right{
+  float:left; /* 왼쪽으로 플로팅*/
+  width:65%; /* 너비를 부모 요소의 65%로 설정 */
+  margin-left:5%; /* 왼쪽 여백을 5%로 설정 */
+  margin-bottom:2rem; /* 하단 여백을 2rem(32px)으로 설정 */
+  border:1px solid #ccc; /* 1px 두께의 회색 테두리를 추가 */
+  padding:1rem; /* 내부 패딩을 1rem(16px)로 설정 */
+}
+
+/* form-group 사이 간격 지정 */
+section.contact .contact-me .right .form-group{
+  margin-bottom:1.25rem; /* 하단 여백을 1.25rem(20px)으로 설정 */
+}
+
+/* label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block으로 변경 */
+section.contact .contact-me .right .form-group label{
+  display:block;
+  margin-bottom:0.85rem; /* 하단 여백을 0.85rem(13.6px)으로 설정 */
+}
+
+/* input 요소 꾸미기 */
+section.contact .contact-me .right .form-group input{
+  padding:0.625rem; /* 내부 패딩을 0.625rem(10px)으로 설정 */
+  width:100%; /* 너비를 100%로 설정*/
+  outline:none; /* 포커스 효과를 제거 */
+  border:1px solid #ccc; /* 1px 두께의 회색 테두리를 추가 */
+  border-radius:10px; /* 테두리를 둥글게 만듬 */
+}
+
+/* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */ 
+/* input 요소에 포커스를 가했을 때 적용되는 스타일을 정의 */
+section.contact .contact-me .right .form-group input:focus{
+  border:1px solid #719ECE; /* 포커스 시 테두리 색상을 파란색(#719ECE)으로 변경 */
+  box-shadow:0 0 10px #719ECE; /* 포커스 시 그림자 효과를 추가 */
+}
+
+/* textarea 요소 꾸미기 */
+section.contact .contact-me .right .form-group textarea{
+  height:300px;   /* 높이를 300px로 설정 */
+  width:100%;   /* 너비를 100%로 설정 */
+  resize:none;   /* 크기 조정을 금지 */
+  border:1px solid #ccc;   /* 1px 두께의 회색 테두리를 추가 */
+  border-radius:10px;   /* 테두리를 둥글게 만듬 */
+}
+
+/* textarea 요소에 커서 활성화가 되면 파란색 테두리와 그림자 효과 추가 */
+/* textarea 요소에 포커스를 가했을 때 적용되는 스타일을 정의합니다. */
+section.contact .contact-me .right .form-group textarea:focus{
+  outline:none;   /* 포커스 효과를 제거합니다. */
+  border:1px solid #719ECE;   /* 포커스 시 테두리 색상을 파란색(#719ECE)으로 변경*/
+  box-shadow:0 0 10px #719ECE;   /* 포커스 시 그림자 효과를 추가 */
+}
+
+/* 버튼 요소 꾸미기 */
+section.contact .contact-me .right button{
+  width:100%; /* 너비를 100%로 설정 */
+  padding:1rem; /* 내부 패딩을 1rem(16px)로 설정 */
+  background-color:#f78b00; /* 배경 색상을 주황색(#f78b00)으로 설정 */
+  border:none; /* 테두리 없음 */
+  color:white; /* 텍스트 색상을 흰색으로 설정 */
+}
+/* End contact_with_me.css */
+
+
+/* media.css */
+/* 화면 너비가 1140px 이하일 때 적용되는 스타일을 정의하는 미디어 쿼리 시작 */
+@media screen and (max-width: 1140px){
+
+  /* 메인 container 기준 1140 -> 992px */
+  main .container{
+    width: 992px;
+  }
+  
+  /* 섹션 container 기준 1140 -> 600px */
+  section .container{
+    width:600px;
+  }
+
+  /* About me 영역 왼쪽을 너비를 50% -> 100% 변경 */
+  section .about-self .left{
+    width:100%;
+    margin-bottom: 1.5rem;   /* 하단 여백 추가 */
+  } 
+  /* About me 영역 오른쪽 너비를 50% -> 100% 변경 */
+  section  .about-self .right{
+    width:100%;
+    padding:0;   /* 패딩 제거 */
+  }
+
+  /* What I Do 영역의 콘텐츠 박스의 너비를 30% -> 48% 변경 */
+  section .do-me .do-inner{
+    width:48%;
+    margin-bottom: 1.5rem;
+    margin-right: 0;   /* 오른쪽 여백 제거 */
+  }
+
+  section .do-me .do-inner:nth-child(2n+1){
+    margin-right:4%; /* 1, 3, 5...번째 본문 사각형에 margin-right 4% 적용 */
+  }
+  
+  /* PortFolio 영역의 콘텐츠 박스 너비를 30% ->  48% 변경 */
+  section .portfolio-me .portfolio-inner{
+    width:48%;
+    margin-right: 0;   /* 오른쪽 여백 제거 */
+  }
+
+  section .portfolio-me .portfolio-inner:nth-child(2n+1){
+    margin-right:4%;
+  }
+
+  /* Contact With Me 영역 */
+  section.contact .contact-me .left{
+    width:100%; /* 너비 변경 30% -> 100% */
+  }
+  
+  section.contact .contact-me .right{
+    width:100%;/* 너비 변경 65% -> 100% */
+    margin-left: 0; /* margin 초기화 */
+    
+  }
+}
+/* 미디어 쿼리 종료 */
+
+
+/* 화면 너비가 992px 이하일 때 적용되는 스타일을 정의하는 미디어 쿼리 시작 */
+@media (max-width: 992px){
+  html{
+    font-size: 14px;   /* 기본 HTML 폰트 크기를 14px로 변경 */
+  }
+
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container{
+    width: 768px; /* 992px -> 768px */
+  }
+
+  /* PortFolio 영역 */
+  section .portfolio-me .portfolio-inner{
+    width:100%; /* 48% -> 100% 변경 */
+  } 
+}
+/* 미디어 쿼리 종료 */
+
+
+/* 화면 너비가 768px 이하일 때 적용되는 스타일을 정의하는 미디어 쿼리 시작 */
+@media (max-width: 768px){
+  html{
+    font-size: 13px;  /* HTML 폰트 크기를 13px로 변경 */
+  }
+  
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container{
+    width: 576px; /* 768px -> 576px */
+  }
+
+  section .container{
+    width:400px; /* 600px -> 400px */
+  }
+
+  section .do-me .do-inner{
+    width:100%; /* 48% -> 100% */
+    margin-right: 0; /* margin 초기화 */
+  }
+}
+/* 미디어 쿼리 종료 */
+
+
+/* 화면 너비가 576px 이하일 때 적용되는 스타일을 정의하는 미디어 쿼리 시작 */
+@media (max-width: 576px){
+  
+  html{
+    font-size: 12px;   /* HTML 폰트 크기를 12px로 변경 */
+  }
+
+  main .container{
+    width: 400px; /* 576px -> 400px */
+  }
+
+  section .container{
+    width:360px; /* 400px -> 360px */
+  }
+}
+/* 미디어 쿼리 종료 */
+
+
+/* 화면 너비가 400px 이하일 때 적용되는 스타일을 정의하는 미디어 쿼리 시작 */
+@media (max-width: 400px){
+  
+  html{
+    font-size: 11px;  /* HTML 폰트 크기를 11px로 변경 */
+  }
+  main .container{
+    width: 320px;/* 400px -> 320px */
+  }
+
+  main h4{
+    font-size: 1.5rem;  /* 메인 h4 요소의 폰트 크기를 1.5rem로 변경 */
+  }
+  section .container{
+    width: 320px;/* 360px -> 320px */
+  }
+  section .title h2{ 
+    font-size: 3rem; /* 3.5rem -> 3rem */
+  }
+}
+/* End media.css */
+
+
+/* header.active 클래스에 대한 스타일 정의 */
+header.active{
+  background-color:rgba(0,0,0);
+  animation:fadeIn 0.5s ease-in-out;
+}
+
+/* fadeIn 애니메이션 정의 */
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
