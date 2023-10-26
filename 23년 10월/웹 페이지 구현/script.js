@@ -12,7 +12,7 @@
   const spanEl = document.querySelector("main h2 span");
   
   // 텍스트 배열을 선언하고 초기 텍스트를 설정
-  const txtArr = ['Web Publisher', 'Front-End Developer', 'Web UI Designer', 'UX Designer', 'Back-End Developer'];
+  const txtArr = ['grow a little bit every day.', 'grow more today than yesterday.', 'grow up tomorrow.',];
   
   // 인덱스와 현재 텍스트를 추적하는 변수를 초기화
   let index = 0;
@@ -53,8 +53,6 @@
 
   writeTxt();   // 초기에 텍스트를 쓰는 함수를 호출하여 시작
 })();
-/* end text_iife.js */
-
 
 /* scroll_request.js */
 /* 수직 스크롤이 발생하면 header 태그에 active 클래스 추가 및 삭제 */
