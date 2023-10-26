@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
-
+/* header.css */
 /*이 부분은 모든 요소(*)에 적용되는 스타일을 정의*/
 *{
   margin:0;   /*외부 여백 0으로 설정*/
@@ -145,7 +145,7 @@ main h2 span::after{
 }
 
 
-/* about_me.css */
+/* about_me */
 /* section 요소의 스타일을 정의 */
 section{
   font-family:'Poppins', sans-serif; /* 웹폰트 설정 */
@@ -235,7 +235,7 @@ section .about-self .right .social a{
 /* End about_me.css */
 
 
-/* what_i_do.css */
+/* what_i_do */
 /* float 속성 해제*/
 /* section 내부의 .do-me 클래스에 가상 가로선을 추가 */
 section .do-me::after{  
@@ -288,11 +288,11 @@ section .do-me .do-inner:hover{
 section .do-me .do-inner:hover i{
   color:white;   /* 아이콘 색상을 흰색으로 변경 */
 }
-/* End what_i_do.css */
 
 
 
-/* background.css */
+
+
 /* .bg 클래스에 배경 이미지 스타일을 정의 */
 .bg{
   background:url('./images/background.jpg') center center;
@@ -305,48 +305,50 @@ section .do-me .do-inner:hover i{
 /* End background.css */
 
 
-/* portfolio.css */
-section.portfolio::after{
+
+
+section.gallery::after{
   content:""; /* 가상 가로선의 내용 없음 */
   display:block; /* 요소를 블록 요소로 설정 */
   clear:both;   /* clear 속성으로 float 속성값 해제*/
 }
 
-/* portfolio-inner 사각형 꾸미기 */
-section.portfolio .portfolio-inner{
-  width:30%; /* 너비를 부모 요소의 30%로 설정*/
-  margin-right:5%; /* 우측 여백을 5%로 설정 */
+/* gallery-inner 사각형 꾸미기 */
+section.gallery .gallery-inner{
+  width:29%; /* 너비를 부모 요소의 29%로 설정*/
+  margin-right:4%; /* 우측 여백을 4%로 설정 */
   padding:1rem 1rem 1.5rem 1rem; 
   /* 내부 패딩을 위쪽 1rem, 오른쪽 1rem, 아래쪽 1.5rem, 왼쪽 1rem으로 설정 */
   float:left; /* 왼쪽으로 플로팅 */
   background-color:#f8f8f8; /* 배경 색상을 연한 회색(#f8f8f8)으로 설정 */
   border:1px solid #ccc; /* 1px 두께의 회색 테두리를 추가 */
   margin-bottom:3rem; /* 하단 여백을 3rem으로 설정 */
+
 }
 
 /* 3번째마다 margin-right 0 적용 */
-section.portfolio .portfolio-inner:nth-child(3n){
+section.gallery.gallery-inner:nth-child(3n){
   margin-right:0; /* 우측 여백을 0으로 설정 */
 }
 
 /* 이미지의 크기가 부모 요소를 넘지 않도록 100%로 지정 */
-section.portfolio .portfolio-inner img{
+section.gallery .gallery-inner img{
   width:100%; /* 너비를 부모 요소의 100%로 설정하여 이미지를 화면에 맞게 조절 */
   display:block; /* 요소를 블록 요소로 설정 */
 }
 
 /* strong 태그 색상과 간격 */
-section.portfolio .portfolio-inner strong{
+section.gallery .gallery-inner strong{
   color:#ff6a6a; /* 텍스트 색상을 빨간색(#ff6a6a)으로 설정 */
   margin:0.5rem 0; /* 위아래 여백을 0.5rem(8px)으로 설정 */
   display:block; /* 요소를 블록 요소로 설정 */
 }
 
 /* h3 태그 색상과 간격 */
-section.portfolio .portfolio-inner h3{
+section.gallery .gallery-inner h3{
   font-size:1.75rem; /* 글꼴 크기를 1.75rem으로 설정 */
 }
-/* End portfolio.css */
+
 
 
 /* contact_with_me.css */
