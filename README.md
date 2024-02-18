@@ -6,17 +6,22 @@ My Profile & Portfolio site - Web Publishing
 
 ## :mag_right: 목차
 01. [프로젝트 소개](#-프로젝트-소개)
-02. [기능 구현 영상](#-기능-구현-영상)
-03. [사용한 기술 스택](#-사용한-기술-스택)
-    - [HTML5](#-html5)
-    - [CSS3](#-css3)
-    - [JavaScript](#-javascript)
-04. [작성 시 신경 쓴 부분](#-작성-시-신경-쓴-부분)
-05. [회고](#-회고)
+02. [개발 기간](#-개발-기간)
+03. [기능 구현 영상](#-기능-구현-영상)
+04. [개발 환경](#-개발-환경)
+05. [작성 시 신경 쓴 부분](#-작성-시-신경-쓴-부분)
+06. [회고](#-회고)
+   
 <br>
 
 ## 🔎 프로젝트 소개
 `HTML5` + `CSS3` + `JavaScript`를 활용하여 나의 프로필과 포트폴리오를 나타낼 수 있는 웹 페이지를 구현하였다.
+
+<br>
+<br>
+
+## 🔎 개발 기간
+* 전체 개발 기간 : 2023.10.01 - 2023.10.31
 
 <br>
 <br>
@@ -28,7 +33,13 @@ My Profile & Portfolio site - Web Publishing
 <br>
 <br>
 
-## 💊 사용한 기술 스택 
+## 💊 개발 환경
+### Front-end
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"/> 
+<br>
+### Tools
+<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+<br>
 
 ### ✏️ HTML5
 이 `HTML` 코드는 웹 페이지의 구조를 설명하고, 여러 섹션에서 스크롤 애니메이션 및 다양한 내용을 표시하도록 구성되어 있다.
